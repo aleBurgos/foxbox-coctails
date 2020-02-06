@@ -22,4 +22,4 @@ To improve the performance in lists we can:
  - Use FlatList to render a list of items instead of using `.map()`. FlatList is a performant component to render a big amount of items.
  - To update a single item in a `FlatList`  use `extraData` property   which is designed for updating your existing list items without updating the list itself or other list items.
  -  With `FlatList`, if the list items have fixed size use `getItemLayout`.
- -  With `FlatList`, Tweak the  props ([`windowSize`, `initialNumToRender` etc](https://facebook.github.io/react-native/docs/optimizing-flatlist-configuration).) to find your desired performance and fillrate.
+ -  With `FlatList`, Tweak the  props ([`windowSize`, `initialNumToRender` etc](https://facebook.github.io/react-native/docs/optimizing-flatlist-configuration).) to find the desired performance and fillrate.
