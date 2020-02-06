@@ -1,6 +1,6 @@
 ## Foxbox Challenge
 
-![Android](./doc/android.gif)
+![Android](./doc/android.gif =375x812)
 
 **Short description**
 Project created in typescript. I implemented a few simple unit tests (the most relevant ones)
