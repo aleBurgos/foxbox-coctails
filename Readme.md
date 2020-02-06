@@ -13,7 +13,7 @@
  - `React-Saga`: I use it because I think it enables work with side-effects more efficiently, enabling to debounce a task (or ajax call) after some conditions or the user can cancel them improving the performance of the app (consuming fewer resources or data) and enhancing the user experience.
  - `react-native-fast-image`:  Loading images always is an expensive task, so thanks to this library and his features (like  use of cache, preload images, and few more) improve a lot the user experience avoiding flickering or slowness when load images.
 
-**Improving the list perfomance **
+**Improving the list perfomance**
 
 To improve the perfomance in lists we can:
 
