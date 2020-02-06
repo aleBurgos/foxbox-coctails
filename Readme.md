@@ -1,6 +1,11 @@
 ## Foxbox Challenge
 
-![Android](./doc/android.gif =375x812)
+
+| <img src="./doc/android.gif" alt="android" width="375"/> |
+<img src="./doc/ios.gif" alt="ios" width="375"/>  |
+|--|--|
+|  Android | iOS  |
+
 
 **Short description**
 Project created in typescript. I implemented a few simple unit tests (the most relevant ones)
