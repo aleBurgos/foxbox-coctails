@@ -5,7 +5,7 @@ import {SearchBar} from '../search-bar';
 import {withNavigation} from 'react-navigation';
 import {HeaderBackButton} from 'react-navigation-stack';
 
-type SearchInputProps = {
+export type SearchInputProps = {
 	onFocus?: any;
 	placeholder?: string;
 	cancelSearch?: any;
@@ -13,7 +13,7 @@ type SearchInputProps = {
 	searchTerm?: string;
 	navigation?: any;
 };
-export const SearchHeader = withNavigation(
+export const SearchHeader =
 	({
 		navigation,
 		onFocus,
@@ -77,5 +77,7 @@ export const SearchHeader = withNavigation(
 				</View>
 			</SafeAreaView>
 		);
-	},
-);
+	};
+
+
+export const SearchHeaderWithNavigation = withNavigation(SearchHeader);

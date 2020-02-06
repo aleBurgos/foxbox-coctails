@@ -7,11 +7,11 @@ import {Cocktail} from '../../types';
 import {SearchHeader} from '../../components/search-header/SearchHeader';
 
 type MainScreenProps = {
-  navigation: NavigationStackProp;
-  searchCocktails: any;
+  navigation?: NavigationStackProp;
+  searchCocktails?: any;
   items: Cocktail[];
-  loading: boolean;
-  error: string;
+  loading?: boolean;
+  error?: string;
 };
 
 export const SearchScreen: FC<MainScreenProps> = ({
@@ -23,11 +23,11 @@ export const SearchScreen: FC<MainScreenProps> = ({
   const renderResult = () => {
 
       if(error){
-          return <Text style={styles.error_message}>Something went wrong: {error} </Text>
+          return <Text testID="error-message" style={styles.error_message}>Something went wrong: {error} </Text>
       }
 
     return loading ? (
-      <ActivityIndicator color="white" size="large" />
+      <ActivityIndicator testID="spinner" color="white" size="large" />
     ) : (
       <CocktailList items={items} />
     );

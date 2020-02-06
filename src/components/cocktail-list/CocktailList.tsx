@@ -10,7 +10,7 @@ type CocktailListProps = {
 
 export const CocktailList: FC<CocktailListProps> = ({items}) => {
     const renderItem = ({item}: any): any => {
-        return <View key={item.id} style={styles.cocktail_item}>
+        return <View testID="cocktail-list-item" key={item.id} style={styles.cocktail_item}>
             <FastImage
                 style={styles.cocktail_item__thumb}
                 source={{
