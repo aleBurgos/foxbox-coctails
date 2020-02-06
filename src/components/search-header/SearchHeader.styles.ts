@@ -15,6 +15,5 @@ export default StyleSheet.create({
 
     search_header__searchbar: {
         flex: 1,
-        backgroundColor: 'yellow',
     }
 });
