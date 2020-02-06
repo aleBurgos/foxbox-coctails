@@ -17,7 +17,6 @@ export const SearchHeader = withNavigation(
 	({
 		navigation,
 		onFocus,
-		placeholder,
 		changeSearchTerm,
 		searchTerm,
 		cancelSearch,
@@ -35,7 +34,8 @@ export const SearchHeader = withNavigation(
 		};
 
 		const onBackToMainScreen = () => {
-			navigation.goBack();
+            onCancelSearch();
+            navigation.goBack();
 		};
 
 		const onChangeInput = (text: string) => {
@@ -63,7 +63,7 @@ export const SearchHeader = withNavigation(
 							onFocus={onFocusHandler}
 							searchTerm={searchTerm}
 							autoFocus
-							placeholder={placeholder}
+							placeholder="Search"
 						/>
 					</View>
 
