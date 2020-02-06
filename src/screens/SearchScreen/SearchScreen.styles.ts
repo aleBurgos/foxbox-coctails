@@ -8,5 +8,10 @@ export default StyleSheet.create({
     search_screen: {
         paddingTop: 6,
     },
+    error_message: {
+        fontSize: 16,
+        color: 'white',
+        textAlign:'center'
+    }
 
 });

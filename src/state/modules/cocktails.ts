@@ -35,6 +35,7 @@ let initialState = {
 export default createReducer(initialState, {
     [SEARCH_INPUT_CHANGE]: (state, action) => {
         state.searchTerm = action.payload;
+        state.error = '';
     },
     [SEARCH_COCKTAILS]: (state) => {
         state.loading = true;
@@ -46,5 +47,9 @@ export default createReducer(initialState, {
     [CANCEL_SEARCH]: (state) => {
         state.items = [];
         state.searchTerm = '';
-    }
+        state.error = '';
+    },
+    [SEARCH_COCKTAILS_ERROR]:(state, action)=>{
+        state.error = action.payload;
+    },
 });
