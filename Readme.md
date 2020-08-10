@@ -1,4 +1,4 @@
-## Foxbox Challenge
+## Foxbox Cocktail App
 
 
 | <img src="./doc/android.gif" alt="android" width="375"/> |
